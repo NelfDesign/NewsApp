@@ -4,11 +4,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DetailsNews">
+    tools:context=".DetailsNews"
+    android:orientation="vertical">
 
-    <WebView
-        android:id="@+id/web"
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/desc"
+        android:hint="texte 2"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/link"
+        android:textSize="18sp"
+        android:hint="texte"
+        android:autoLink="web"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:lines="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:hint="date"/>
+
 
 </LinearLayout>
