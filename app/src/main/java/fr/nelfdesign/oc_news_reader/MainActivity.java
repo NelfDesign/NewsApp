@@ -27,8 +27,6 @@ public class MainActivity extends AppCompatActivity {
         parser = new XMLParser(newsAdapter);
         parser.execute("https://www.lemonde.fr/rss/une.xml");
 
-        parser.executeOnExecutor(AsyncTask.SERIAL_EXECUTOR);
-        parser.execute("https://www.lemonde.fr/videos/rss_full.xml", "https://www.lemonde.fr/videos/rss_full.xml");
         loadNext();
 
         final ProgressBar progress = findViewById(R.id.progress);
